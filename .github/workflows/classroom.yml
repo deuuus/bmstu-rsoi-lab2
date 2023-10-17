@@ -32,9 +32,9 @@ jobs:
 
       - name: Run Unit Tests
         run: |
-          cd src/loyalty/internal/handler && go test
-          cd src/payment/internal/handler && go test
-          cd srv/reservation/internal/handler && go test
+          cd src/loyalty/internal/handlers && go test
+          cd src/payment/internal/handlers && go test
+          cd srv/reservation/internal/handlers && go test
 
       - name: Run API Tests
         uses: matt-ball/newman-action@master
